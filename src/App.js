@@ -43,7 +43,7 @@ function App() {
       <Route path="/perfil" component={ Profile } />
       <Route path="/receitas-feitas" component={ DoneRecipes } />
       <Route path="/receitas-favoritas" component={ FavoriteRecipes } />
-      <Route path="" component={ NotFound } />
+      <Route path="" component={ Login } />
     </Switch>
   );
 }
