@@ -36,6 +36,11 @@ class Login extends React.Component {
     history.push('/comidas');
   }
 
+  alertMessage() {
+    const text = 'A proporção recomendada para a visualização é de: 360x640, você pode altera-la inspecionando a página, pressionando "Ctrl + shift + M" e selecionando o dispositivo "Moto G4".';
+    return alert(text);
+  }
+
   validateForm() {
     const { email, password } = this.state;
     const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
@@ -52,6 +57,7 @@ class Login extends React.Component {
     return (
       <div className="login-background">
         <img className="logo-img" src={ logo } alt="Logo Ta na Mesa" />
+        { this.alertMessage() }
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label className="label-login">Email</Form.Label>
