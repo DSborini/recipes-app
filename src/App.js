@@ -18,7 +18,7 @@ import FoodByOrigin from './pages/FoodByOrigin';
 import Profile from './pages/Profile';
 import DoneRecipes from './pages/DoneRecipes';
 import FavoriteRecipes from './pages/FavoriteRecipes';
-import NotFound from './pages/NotFound';
+// import NotFound from './pages/NotFound';
 
 function App() {
   return (
