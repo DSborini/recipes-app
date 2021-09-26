@@ -1,8 +1,8 @@
 {
   "name": "recipes-app-test",
   "version": "0.1.0",
+  "homepage": "recipes-app/",
   "private": true,
-  "homepage": "https://dsborini.github.io/recipes-app/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@sheerun/mutationobserver-shim": "^0.3.3",
