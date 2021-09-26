@@ -17,6 +17,10 @@ class Login extends React.Component {
     this.onClickSubmit = this.onClickSubmit.bind(this);
   }
 
+  componentDidMount() {
+    return this.alertMessage();
+  }
+
   handleChange({ target }) {
     const { name, value } = target;
     if (name === 'email') {
@@ -57,7 +61,6 @@ class Login extends React.Component {
     return (
       <div className="login-background">
         <img className="logo-img" src={ logo } alt="Logo Ta na Mesa" />
-        { this.alertMessage() }
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label className="label-login">Email</Form.Label>
